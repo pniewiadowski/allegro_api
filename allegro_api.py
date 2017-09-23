@@ -7,7 +7,11 @@ prod_web_api = 'https://webapi.allegro.pl/service.php?wsdl'
 client = zeep.Client(wsdl=prod_web_api)
 filterOptionsList = {'item':
                          {'filterId': 'category',
-                          'filterValueId': 'householdHealth'
+                          'filterValueId': ['20782'] #Nieruchomosci
+                          },
+                     'item':
+                         {'filterId': 'state',
+                          'filterValueId': '2'
                           }
                      }
 
